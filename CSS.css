@@ -1,0 +1,33 @@
+@media screen, print {
+    body {background: rgb(129, 28, 28);}
+}
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+h1 {
+    font: bold 50px Castellar;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    background-image: linear-gradient(90deg, 
+    rgba(175, 15, 42, 0.9), rgba(241, 45, 78, 0.9), rgba(175, 15, 42, 0.9));
+    padding: 1.5em;
+    border: 5px solid rgb(252, 200, 209);
+}
+h2 {
+    font: 70px 'Freestyle Script';
+    text-align: center;
+    color: silver; 
+    padding: 0em 2em;
+}
+a {
+    font: 39px 'Bodoni MT';
+    color: rgb(255, 217, 146); 
+    text-decoration: none;
+    border-style: none none ridge none;
+    padding: 0px;
+}
+div {
+    text-align: center;
+}
