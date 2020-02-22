@@ -1,0 +1,44 @@
+.rm {
+    animation: lst 5000ms ease-in-out 0ms infinite normal running forwards, lst-color 8000ms ease-in-out infinite;
+}
+
+@keyframes lst {
+    0%, 100% {
+        list-style-type: cjk-earthly-branch;
+    }
+    17% {
+        list-style-type: cjk-heavenly-stem;
+    }
+    34% {
+        list-style-type: katakana;
+    }
+    51% {
+        list-style-type: hiragana-iroha;
+    }
+    68% {
+        list-style-type: korean-hangul-formal;
+    }
+    85% {
+        list-style-type: lower-greek;
+    }
+}
+@keyframes lst-color {
+    0%, 100% {
+        color: crimson;
+    }
+    17% {
+        color: rgb(87, 2, 2);
+    }
+    34% {
+        color: rgb(219, 84, 111);
+    }
+    51% {
+        color: rgb(245, 68, 215);
+    }
+    68% {
+        color: rgb(146, 3, 32);
+    }
+    85% {
+        color: rgb(134, 67, 108);
+    }
+}
