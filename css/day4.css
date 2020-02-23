@@ -1,0 +1,56 @@
+nav {
+    margin: 30px 2.5in;
+    text-align: center;
+}
+
+a:link, a:visited {
+    border-style: outset; 
+    border-width: 5px;
+    border-color: transparent;
+    padding: 3px 7px 3px;
+    color: rgb(180, 3, 71);
+    text-shadow: rgba(182, 1, 85, 0.473) 0px 15px;
+}
+a:hover {
+    border-color: rgb(155, 6, 68);
+    background-color: rgb(155, 28, 81);
+    color: rgb(255, 205, 218);
+    text-shadow: rgba(160, 20, 85, 0.829) 0px 27px;
+}
+
+#language {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(244, 178, 250, 0.979);
+    font-size: 20px;
+    font-family: "Blackadder ITC", "Modern No. 20", "Bodoni MT";
+    animation: bd 1000ms linear 0ms infinite alternate, bd-color 1300ms ease-in-out 0ms infinite;
+}
+
+em {
+    padding: 50px;
+}
+
+@keyframes bd {
+    from, to {
+        border-style: dashed;
+        border-width: 5px;
+    }
+    50% {
+        border-style: dotted;
+        border-width: 5px;
+    }
+}
+
+@keyframes bd-color {
+    0%, 100% {
+        border-color: rgba(255, 0, 119, 0.473);
+    }
+    30% {
+        border-color: rgba(248, 86, 162, 0.993);
+    }
+    60% {
+        border-color: rgba(255, 1, 64, 0.801);
+    }
+}
