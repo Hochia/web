@@ -1,0 +1,54 @@
+h2 {
+    font-size: 58px;    
+    text-align: center;
+    animation: rotation-xy 30000ms linear 1000ms infinite normal;
+}
+h2::first-letter {
+    font-size: 100px;
+    font-family: "Old English Text MT";
+    color: rgb(118, 180, 238);
+}
+
+a:link {
+    border-style: outset; 
+    border-width: 5px;
+    border-color: transparent;
+    padding: 3px 7px 3px;
+    color: rgb(180, 3, 71);
+    text-shadow: rgba(182, 1, 85, 0.473) 0px 30px;
+}
+a:visited {
+    border-style: inset; 
+    border-width: 5px;
+    border-color: transparent;
+    padding: 3px 7px 3px;
+    color: rgb(2, 109, 73);
+    text-shadow: rgba(2, 73, 46, 0.534) 0px 30px;
+}
+a:focus {
+    border-color: rgb(71, 139, 119);
+    background-color: rgb(2, 51, 47);
+    color: rgb(151, 196, 173);
+    text-shadow: rgba(13, 97, 100, 0.829) 0px 30px;
+}
+a:hover {
+    border-color: rgb(155, 6, 68);
+    background-color: rgb(155, 28, 81);
+    color: rgb(255, 205, 218);
+    text-shadow: rgba(160, 20, 85, 0.829) 0px 30px;
+}
+a:active {
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+    text-shadow: transparent;
+}
+a:link, a:visited {font-size: 30px;}
+a:hover, a:active {font-size: 35px;}
+
+@keyframes rotation-xy {
+    from, to{transform: rotateX(0deg) rotateY(0deg);}
+    25% {transform: rotateX(180deg) rotateY(0deg);}
+    50% {transform: rotateX(180deg) rotateY(180deg);}
+    75% {transform: rotateX(180deg) rotateY(0deg);}
+}
