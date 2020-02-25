@@ -1,0 +1,85 @@
+h2 {
+    margin: 50px;
+    font-size: 58px; 
+    text-align: center;
+    transform-origin: 50% top;
+    animation: back-and-forth 1800ms linear 0ms infinite alternate;
+}
+h2::first-letter {
+    font-size: 100px;
+    font-family: "Old English Text MT";
+    color: rgb(118, 180, 238);
+}
+.upsidedown {
+    margin: 80px 0px -50px;
+    font-size: 58px; 
+    color: rgba(13, 14, 15, 0.322);
+    text-align: center;
+    transform-origin: 50% top;
+    animation: upside-down 1800ms linear 0ms infinite alternate;
+}
+.upsidedown::first-letter {
+    font-size: 100px;
+    font-family: "Old English Text MT";
+    color: rgba(26, 58, 90, 0.438);
+}
+
+#grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+.box1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.box2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.box3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.box4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.box5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+a:link, a:focus {
+    border-style: outset; 
+    border-width: 7px;
+    border-color: rgba(112, 26, 23, 0.295);
+    padding: 3px 7px 3px;
+    color: rgb(180, 3, 71);
+}
+a:visited, a:hover, a:active {
+    border-color: rgb(155, 6, 68);
+    background-color: rgb(223, 181, 198);
+    color: rgba(175, 13, 57, 0.89);
+}
+a {font-size: 35px;}
+
+@keyframes back-and-forth {
+    from {transform: rotateX(-30deg) skewX(-17deg);}
+    to {transform: rotateX(30deg) skewX(17deg);}
+}
+@keyframes upside-down {
+    from {transform: rotateX(210deg) skewX(-17deg);}
+    to {transform: rotateX(150deg) skewX(17deg);}
+}
