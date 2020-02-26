@@ -1,0 +1,49 @@
+h2 {
+    text-align: center;
+    font-size: 87px;
+    font-family: "Lucida Calligraphy";
+    margin-bottom: 10px;
+}
+
+#tetris {
+    display: grid;
+    grid-template-areas: 
+        "n4 n4 n4 n4 n4 n4 n4"
+        "n4 n4 n4 n4 n4 n4 n4"
+        "n4 n4 n4 n4 n4 n4 n4"
+        "n4 n4 n4 n4 n4 n4 n4"
+        "g3 g3 n7 r2 r2 r2 r2"
+        "g3 g3 o1 n2 b2 b2 n5"
+        "r1 o2 o1 n2 n3 b1 b1"
+        "r1 n1 o1 n2 g2 g2 n6"
+        "r1 g1 g1 n2 g2 g2 y2"
+        "r1 g1 g1 n2 y1 y1 y1";
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(10, 50px);
+}
+
+span[class^="r"] {background-color: red; color: red;}
+span[class^="o"] {background-color: orange; color: orange;}
+span[class^="y"] {background-color: yellow; color: yellow;}
+span[class^="g"] {background-color: green; color: green;}
+span[class^="b"] {background-color: blue; color: blue;}
+span[class^="n"] {background-color: gray; color: gray;}
+
+.r1 {grid-area: r1;}
+.r2 {grid-area: r2;}
+.o1 {grid-area: o1;}
+.o2 {grid-area: o2;}
+.y1 {grid-area: y1;}
+.y2 {grid-area: y2;}
+.g1 {grid-area: g1;}
+.g2 {grid-area: g2;}
+.g3 {grid-area: g3;}
+.b1 {grid-area: b1;}
+.b2 {grid-area: b2;}
+.n1 {grid-area: n1;}
+.n2 {grid-area: n2;}
+.n3 {grid-area: n3;}
+.n4 {grid-area: n4;}
+.n5 {grid-area: n5;}
+.n6 {grid-area: n6;}
+.n7 {grid-area: n7;}
