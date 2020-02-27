@@ -1,0 +1,54 @@
+#keyboard {
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 830px;
+    grid-template-rows: repeat(6, 50px);
+    row-gap: 5px;
+}
+#kbr1 {
+    display: grid;
+    grid-template-columns: repeat(16, 50px);
+}
+#kbr2 {
+    display: grid;
+    grid-template-columns: repeat(13, 50px) 100px;
+}
+#kbr3 {
+    display: grid;
+    grid-template-columns: 100px repeat(13, 50px);
+}
+#kbr4 {
+    display: grid;
+    grid-template-columns: 100px repeat(11, 50px) 100px;
+}
+#kbr5 {
+    display: grid;
+    grid-template-columns: 100px repeat(12, 50px);
+}
+#kbr6 {
+    display: grid;
+    grid-template-columns: repeat(4, 50px) 250px repeat(5, 50px);
+}
+div[id^="kbr"] {
+    grid-template-rows: 50px;
+    column-gap: 5px;
+    justify-self: center;
+}
+
+span {
+    text-align: center;
+    font-family: "Bodoni MT", "Comic Sans MS", Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    border-style: outset; 
+    border-width: 7px;
+    border-color: rgb(90, 3, 68);
+    background-color: rgba(90, 3, 68, 0.884);
+}
+span:hover {
+    font-family: "Bodoni MT", "Comic Sans MS", Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    border-style: outset; 
+    border-width: 7px;
+    border-color: rgb(90, 3, 0);
+    background-color: rgba(90, 3, 0, 0.801);
+}
