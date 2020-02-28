@@ -22,12 +22,15 @@ h2 {
     padding: 0em 2em;
 }
 a {
+    display: block;
+    margin: auto;
+    width: fit-content;
     font: 39px 'Bodoni MT';
     color: rgb(255, 217, 146); 
     text-decoration: none;
     border-style: none none ridge none;
-    padding: 0px;
+    padding: 3px;
 }
 div {
-    text-align: center;
+    margin: auto;
 }
