@@ -1,0 +1,94 @@
+#keyboard {
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    row-gap: 5px;
+}
+#kbr1 {
+    display: grid;
+    grid-template-columns: repeat(13, 49px) repeat(3, 50px);
+    column-gap: 4px;
+}
+#kbr2 {
+    display: grid;
+    grid-template-columns: 10px repeat(13, 50px) 75px;
+    column-gap: 7px;
+}
+#kbr3 {
+    display: grid;
+    grid-template-columns: 80px repeat(13, 50px);
+    column-gap: 9px;
+}
+#kbr4 {
+    display: grid;
+    grid-template-columns: 90px repeat(11, 50px) 111px;
+    column-gap: 8px;
+}
+#kbr5 {
+    display: grid;
+    grid-template-columns: 5px 95px repeat(11, 50px) 95px;
+    column-gap: 7px;
+}
+#kbr6 {
+    display: grid;
+    grid-template-columns: 24px repeat(4, 50px) 265px repeat(5, 50px);
+    column-gap: 5px;
+}
+div[id^="kbr"] {
+    grid-template-rows: 50px;
+    justify-self: left;
+}
+
+span {
+    text-align: center;
+    font-family: "Bodoni MT", "Comic Sans MS";
+    color: rgb(255, 255, 255);
+    border-style: outset; 
+    border-width: 7px;
+    border-color: rgb(36, 7, 28);
+    background-color: rgba(73, 55, 69, 0.884);
+}
+span:hover {
+    font-family: "Bodoni MT", "Comic Sans MS";
+    color: rgb(255, 255, 255);
+    border-style: outset; 
+    border-width: 7px;
+    border-color: rgb(90, 3, 0);
+    background-color: rgba(90, 3, 0, 0.801);
+}
+span.blank {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    color: rgb(88, 4, 4);
+    text-decoration: underline;
+    text-shadow: 
+    rgb(212, 0, 0) 300px 0px, 
+    rgb(223, 131, 131) 600px 0px, 
+    rgb(88, 8, 66) 0px 500px, 
+    rgb(212, 7, 66) 300px 500px, 
+    rgb(223, 161, 131) 600px 500px;
+}
+p {
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    line-height: 0;
+    animation: left-right 7000ms linear 0ms infinite alternate;
+}
+
+@keyframes left-right {
+    from {
+        margin-left: 0%; 
+        color: rgba(167, 109, 167, 0.596);
+        text-shadow: rgba(167, 109, 167, 0.596) 0px 360px;
+    }
+    to {
+        margin-left: 80%; 
+        color: rgba(226, 196, 27, 0.596);
+        text-shadow: rgba(226, 196, 27, 0.596) 0px 360px;
+    }
+}
