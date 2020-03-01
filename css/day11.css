@@ -1,0 +1,145 @@
+#bound {
+    display: grid;
+    grid-template-columns: 1fr 883px 1fr;
+}
+#keyboard {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    row-gap: 5px;
+    justify-content: center;
+    border-top: 5px groove;
+    border-right: 5px ridge;
+    border-bottom: 5px ridge;
+    border-left: 5px groove; 
+    border-radius: 35px / 40px;
+    padding: 3px 0px 5px;
+    animation: bd-col 30000ms ease-in-out 0ms infinite normal;
+}
+div[id^="kbr"] {
+    display: grid;
+    grid-template-rows: 50px;
+    justify-self: left;
+}
+#kbr1 {
+    grid-template-columns: repeat(13, 49px) repeat(3, 50px);
+    column-gap: 4px;
+}
+#kbr2 {
+    grid-template-columns: 10px repeat(13, 50px) 75px;
+    column-gap: 7px;
+}
+#kbr3 {
+    grid-template-columns: 80px repeat(13, 50px);
+    column-gap: 9px;
+}
+#kbr4 {
+    grid-template-columns: 90px repeat(11, 50px) 111px;
+    column-gap: 8px;
+}
+#kbr5 {
+    grid-template-columns: 5px 95px repeat(11, 50px) 95px;
+    column-gap: 7px;
+}
+#kbr6 {
+    grid-template-columns: 24px repeat(4, 50px) 265px repeat(5, 50px);
+    column-gap: 5px;
+}
+
+span {
+    text-align: center;
+    line-height: 35px;
+    font-family: "Bodoni MT", "Comic Sans MS";
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    border-top: 7px groove;
+    border-right: 7px ridge;
+    border-bottom: 7px ridge;
+    border-left: 7px groove; 
+    border-radius: 2em;
+}
+span.blank {
+    border-color: transparent;
+    background-color: transparent;
+}
+span:not(.blank) {
+    animation: bd-col 30000ms ease-in-out 0ms infinite normal, bg-col 30000ms ease-in-out 0ms infinite normal;
+}
+span:hover {
+    animation: bd-col-hov 30000ms ease-in-out 0ms infinite normal, bg-col-hov 30000ms ease-in-out 0ms infinite normal;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: "Consolas", "Comic Sans MS";
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    animation: col 30000ms ease-in-out 0ms infinite normal
+}
+#shana {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+input {
+    font-family: "Hasklig", "Freestyle Script";
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+    animation: col 30000ms ease-in-out 0ms infinite normal;
+}
+button {
+    display: block;
+    margin: 0px auto;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 1px;
+    border-style: ridge groove groove ridge;
+    border-width: 3px;
+    border-color: rgb(255, 185, 238);
+}
+#demo {
+    margin: auto;
+    font-family: "Ink Free", "Old English Text MT";
+    font-size: 60px;
+    text-align: center;
+    color: rgb(250, 117, 161);
+}
+
+@keyframes col {
+    0%, 100% {color: rgb(255, 0, 0);}
+    20% {color: rgb(255, 196, 0);}
+    40% {color: rgb(38, 219, 14);}
+    60% {color: rgb(0, 102, 255);}
+    80% {color: rgb(195, 0, 255);}
+}
+@keyframes bd-col {
+    0%, 100% {border-color: rgb(255, 0, 0);}
+    20% {border-color: rgb(255, 196, 0);}
+    40% {border-color: rgb(38, 219, 14);}
+    60% {border-color: rgb(0, 102, 255);}
+    80% {border-color: rgb(195, 0, 255);}
+}
+@keyframes bg-col {
+    0%, 100% {background-color: rgba(255, 0, 0, 0.5);}
+    20% {background-color: rgba(255, 196, 0, 0.5);}
+    40% {background-color: rgba(38, 219, 14, 0.5);}
+    60% {background-color: rgba(0, 102, 255, 0.5);}
+    80% {background-color: rgba(195, 0, 255, 0.5);}
+}
+@keyframes bd-col-hov {
+    0%, 100% {border-color: rgb(255, 0, 0);}
+    20% {border-color: rgb(255, 196, 0);}
+    40% {border-color: rgb(38, 219, 14);}
+    60% {border-color: rgb(0, 102, 255);}
+    80% {border-color: rgb(195, 0, 255);}
+}
+@keyframes bg-col-hov {
+    0%, 100% {background-color: rgba(255, 0, 0, 0.75);}
+    20% {background-color: rgba(255, 196, 0, 0.75);}
+    40% {background-color: rgba(38, 219, 14, 0.75);}
+    60% {background-color: rgba(0, 102, 255, 0.75);}
+    80% {background-color: rgba(195, 0, 255, 0.75);}
+}
