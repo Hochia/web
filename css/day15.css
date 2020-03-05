@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+nav {
+    display: flex;
+    border-bottom: rgb(255, 139, 158) 2px inset;
+}
+#top {
+    flex-direction: row;
+}
+a {
+    font-size: 30px;
+    margin: 7px 3px;
+    background-color: whitesmoke;
+    color: crimson;
+    text-decoration: none;
+}
+div {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    grid-template-columns: repeat(22, 50px);
+}
+span {
+    background-color: whitesmoke;
+    border: 3px solid gray;
+}
+.c {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.d {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 4;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.e {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 7;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.f {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 10;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.g {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 13;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.a {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 16;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.b {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 19;
+    grid-column-end: span 4;
+    background-color: whitesmoke;
+}
+.cs {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    background-color: black;
+}
+.ds {
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-column-end: span 2;
+    background-color: black;
+}
+.fs {
+    grid-row-start: 1;
+    grid-column-start: 12;
+    grid-column-end: span 2;
+    background-color: black;
+}
+.gs {
+    grid-row-start: 1;
+    grid-column-start: 15;
+    grid-column-end: span 2;
+    background-color: black;
+}
+.as {
+    grid-row-start: 1;
+    grid-column-start: 18;
+    grid-column-end: span 2;
+    background-color: black;
+}
