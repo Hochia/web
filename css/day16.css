@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+}
+nav {
+    display: flex;
+    border-bottom: rgb(255, 139, 158) 2px inset;
+}
+#top {
+    flex-direction: row;
+}
+a {
+    font-size: 30px;
+    margin: 7px 3px;
+    background-color: whitesmoke;
+    color: crimson;
+    text-decoration: none;
+}
+div {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    grid-template-columns: repeat(21, 50px) max-content;
+    background-image: linear-gradient(90deg, sienna 1050px, 1050px, black);
+    z-index: 0;
+}
+span {
+    background-color: whitesmoke;
+    border: 3px solid gray;
+    z-index: 2;
+}
+.c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .a:hover, .b:hover {
+    transform: rotateX(10deg);
+    transform-origin: 50% top;
+    z-index: 1;
+}
+.c, .d, .e, .f, .g, .a, .b{
+    grid-row: 1 / span 2;
+    background-color: whitesmoke;
+}
+.c {grid-column: 1 / span 3;}
+.d {grid-column: 4 / span 3;}
+.e {grid-column: 7 / span 3;}
+.f {grid-column: 10 / span 3;}
+.g {grid-column: 13 / span 3;}
+.a {grid-column: 16 / span 3;}
+.b {grid-column: 19 / span 3;}
+.cs:hover, .ds:hover, .fs:hover, .gs:hover, .as:hover {
+    transform: rotateX(10deg);
+    transform-origin: 50% top;
+    z-index: 3;
+}
+.cs, .ds, .fs, .gs, .as {
+    grid-row: 1;
+    background-color: black;
+}
+.cs {grid-column: 3 / span 2;}
+.ds {grid-column: 6 / span 2;}
+.fs {grid-column: 12 / span 2;}
+.gs {grid-column: 15 / span 2;}
+.as {grid-column: 18 / span 2;}
