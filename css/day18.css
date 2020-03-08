@@ -1,0 +1,45 @@
+.box {
+    display: grid;
+    grid-template-rows: 212px 300px 100px 300px 300px;
+    grid-template-columns: 300px 212px 300px 300px max-content;
+}
+#box11 {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: palevioletred;
+    transform: skewX(-45deg) rotateX(45deg);
+    transform-origin: bottom;
+}
+#box12 {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgb(248, 246, 102);
+}
+#box13 {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: rgb(87, 240, 133);
+    transform: skewY(-45deg) rotateY(45deg);
+    transform-origin: left;
+}
+#box21 {
+    grid-row: 4;
+    grid-column: 3;
+    background-color: palevioletred;
+    transform: rotateZ(45deg);
+    transform-origin: 100% 100%;
+}
+#box22 {
+    grid-row: 5;
+    grid-column: 3;
+    transform: skewY(45deg) rotateY(-45deg);
+    transform-origin: right;
+    background-color: rgb(248, 246, 102);
+}
+#box23 {
+    grid-row: 5;
+    grid-column: 4;
+    background-color: rgb(87, 240, 133);
+    transform: skewY(-45deg) rotateY(45deg);
+    transform-origin: left;
+}
