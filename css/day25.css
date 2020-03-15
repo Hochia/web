@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(175, 23, 23);
+}
+
+h1 {
+    color: thistle;
+    font-size: 50px;
+    font-family: "Viner Hand ITC", "Felix Titling";
+}
+
+iframe {
+    background-color: rgb(255, 255, 255);
+}
