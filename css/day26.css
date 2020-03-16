@@ -1,0 +1,13 @@
+i {
+    color: rgba(0, 0, 0, 0.473);
+}
+.keyword {
+    color: rgb(52, 153, 98);
+}
+.assignment {
+    color: rgb(255, 60, 60);
+}
+pre.code {
+    background-color: rgba(238, 238, 238, 0.678);
+    margin: auto 100px;
+}
