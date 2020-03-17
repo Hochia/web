@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 251, 0);
+}
+div {
+    background-color: rgb(47, 79, 79);
+}
+object {
+    background-color: rgb(243, 179, 179);
+    margin: auto 3px;
+}
