@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hochia" />
+    <meta name="description" content="HTML form elements" />
+    <title>Day 34</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <p>R Version:
+            <input type="radio" name="ver" value="361">3.6.1
+            <input type="radio" name="ver" value="362">3.6.2
+            <input type="radio" name="ver" value="363">3.6.3
+        </p>
+        <p>Format:
+            <input type="checkbox" value="rmd">R Markdown
+            <input type="checkbox" value="bkd">Bookdown
+            <input type="checkbox" value="shiny">Shiny
+        </p>
+        <p>Purpose:
+            <select name="purpose" required>
+                <option value="">Select...</option>
+                <optgroup label="Self project">
+                    <option value="side">Side project</option>
+                    <option value="work">Working project</option>
+                </optgroup>
+                <optgroup label="Group project">
+                    <option value="p23">2-3 members</option>
+                    <option value="p4-6">4-6 members</option>
+                    <option value="p6up">&nbsp;&gt;6 members</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>Requirement:
+            <select name="require" multiple size="2">
+                <option label="Python" value="py"></option>
+                <option label="Git" value="git"></option>
+            </select>
+        </p>
+        <p>Novice-Master:
+            <input type="number" min="1" max="10" value="7" name="level">
+        </p>
+        <datalist id="term">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+        </datalist>
+        <p>Term:
+            <input type="range" name="term" min="0" max="30" step="5" list="term">
+        </p>
+        <p>Deadline:
+            <input type="date" name="date" min="2020-01-01" max="2030-12-31" placeholder="yy/mm/dd">
+        </p>
+        <p>Mood:
+            <input type="color" value="#ffcbca">
+        </p>
+        <p>Prerequisite files:<br>
+            <label for="css">CSS</label>
+            <input type="file" name="css" multiple accept=".css"><br>
+            <label for="js">JavaScript</label>
+            <input type="file" name="js" multiple accept=".js">
+        </p>
+    </form>
+</body>
+
+</html>
