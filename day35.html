@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hochia" />
+    <meta name="description" content="HTML form elements" />
+    <script>
+        function Acc1() {
+            document.getElementsByName("a1")[0].value = "Version check...";
+        }
+        function Acc2() {
+            document.getElementsByName("a2")[0].value = "Format check...";
+        }
+        function Acc3() {
+            document.getElementsByName("a3")[0].value = "Purpose check...";
+        }
+    </script>
+    <title>Day 35</title>
+</head>
+
+<body>
+    <form action="" method="get" oninput="Acc1()">
+        <p>R Version:
+            <input type="radio" id="r361" name="ver" value="361">
+            <label for="r361">3.6.1</label>
+            <input type="radio" id="r362" name="ver" value="362">
+            <label for="r362">3.6.2</label>
+            <input type="radio" id="r363" name="ver" value="363">
+            <label for="r363">3.6.3</label>
+        </p>
+    </form>
+    <form action="" method="get" oninput="Acc2()">
+        <p>Format:
+            <input type="checkbox" id="f-rmd" value="rmd">
+            <label for="f-rmd">R Markdown</label>
+            <input type="checkbox" id="f-bkd" value="bkd">
+            <label for="f-bkd">Bookdown</label>
+            <input type="checkbox" id="f-shiny" value="shiny">
+            <label for="f-shiny">Shiny</label>
+        </p>
+    </form>
+    <form action="" method="get" oninput="Acc3()">
+        <p>Purpose:
+            <select name="purpose" required>
+                <option value="">Select...</option>
+                <optgroup label="Self project">
+                    <option value="side" id="purp1">Side project</option>
+                    <option value="work" id="purp2">Working project</option>
+                </optgroup>
+                <optgroup label="Group project">
+                    <option value="p23" id="purp3">2-3 members</option>
+                    <option value="p4-6" id="purp4">4-6 members</option>
+                    <option value="p6up" id="purp5">&nbsp;&gt;6 members</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+    <p>Requirement:
+        <select name="require" multiple size="2">
+            <option label="Python" value="py"></option>
+            <option label="Git" value="git"></option>
+        </select>
+    </p>
+    <p>Novice-Master:
+        <input type="number" min="1" max="10" value="7" name="level">
+    </p>
+    <datalist id="term">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+    </datalist>
+    <p>Term:
+        <input type="range" name="term" min="0" max="30" step="5" list="term">
+    </p>
+    <p>Deadline:
+        <input type="date" name="date" min="2020-01-01" max="2030-12-31" placeholder="yy/mm/dd">
+    </p>
+    <p>Mood:
+        <input type="color" value="#ffcbca">
+    </p>
+    <p>Prerequisite files:<br>
+        <label for="css">CSS</label>
+        <input type="file" name="css" multiple accept=".css"><br>
+        <label for="js">JavaScript</label>
+        <input type="file" name="js" multiple accept=".js">
+    </p>
+    <label>Accomplishment:<br>
+        <output for="r361 r362 r363" name="a1"></output>
+        <output for="f-bkd f-rmd f-shiny" name="a2"></output>
+        <output for="purp1 purp2 purp3 purp4 purp5" name="a3"></output>
+    </label>
+</body>
+
+</html>
