@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hochia" />
+    <meta name="description" content="HTML form elements" />
+    <script>
+        function Acc1() {
+            document.getElementsByName("a1")[0].value = "Version check...";
+        }
+        function Acc2() {
+            document.getElementsByName("a2")[0].value = "Format check...";
+        }
+        function Acc3() {
+            document.getElementsByName("a3")[0].value = "Purpose check...";
+        }
+    </script>
+    <title>Day 35</title>
+</head>
+
+<body>
+    <form action="" method="get" oninput="Acc1()">
+        <fieldset>
+            <legend>&emsp;R Version&emsp;</legend>
+            <input type="radio" id="r361" name="ver" value="361">
+            <label for="r361">3.6.1</label>
+            <input type="radio" id="r362" name="ver" value="362">
+            <label for="r362">3.6.2</label>
+            <input type="radio" id="r363" name="ver" value="363">
+            <label for="r363">3.6.3</label>
+        </fieldset>
+    </form>
+    <form action="" method="get" oninput="Acc2()">
+        <fieldset>
+            <legend>&emsp;Format&emsp;</legend>
+            <input type="checkbox" id="f-rmd" value="rmd">
+            <label for="f-rmd">R Markdown</label>
+            <input type="checkbox" id="f-bkd" value="bkd">
+            <label for="f-bkd">Bookdown</label>
+            <input type="checkbox" id="f-shiny" value="shiny">
+            <label for="f-shiny">Shiny</label>
+        </fieldset>
+    </form>
+    <form action="" method="get" oninput="Acc3()">
+        <fieldset>
+            <legend>&emsp;Purpose&emsp;</legend>
+            <select name="purpose" required>
+                <option value="">Select...</option>
+                <optgroup label="Self project">
+                    <option value="side" id="purp1">Side project</option>
+                    <option value="work" id="purp2">Working project</option>
+                </optgroup>
+                <optgroup label="Group project">
+                    <option value="p23" id="purp3">2-3 members</option>
+                    <option value="p4-6" id="purp4">4-6 members</option>
+                    <option value="p6up" id="purp5">&nbsp;&gt;6 members</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+    <p>
+        <meter min="0" max="100" low="30" high="50" optimum="70" value="20"></meter>
+        <meter min="0" max="100" low="30" high="50" optimum="70" value="49"></meter>
+        <meter min="0" max="100" low="30" high="50" optimum="70" value="90"></meter>
+    </p>
+    <p>
+        <progress min="0" max="100" value="90">
+            Browser DO NOT support!!!
+        </progress>
+    </p>
+
+    <label>Accomplishment:<br>
+        <output for="r361 r362 r363" name="a1"></output>
+        <output for="f-bkd f-rmd f-shiny" name="a2"></output>
+        <output for="purp1 purp2 purp3 purp4 purp5" name="a3"></output>
+    </label><br>
+    <button type="submit" value="submit">(^-^)Submit(^-^)</button>
+</body>
+
+</html>
